@@ -1,3 +1,7 @@
+.container {
+  overflow: hidden;
+}
+
 #MTQBatuTaba{
   background-color: #198754
 }
