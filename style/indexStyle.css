@@ -1,224 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+.container {
+  overflow: hidden;
+}
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+#MTQBatuTaba {
+  background-color: #198754;
+}
 
-    <!-- AOS: slide animasi -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+h2,
+p {
+  text-align: center;
+  color: #eaeaea;
+}
 
-    <!-- exsternal icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+.center {
+  text-align: center;
+}
 
-    <!-- my css -->
-    <link rel="stylesheet" href="style/indexStyle.css" />
+.row {
+  margin-bottom: 1rem;
+}
 
-    <title>MTQ 1443H - 2022M | Batu Taba</title>
-  </head>
-  <body id="home">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success shadow" data-aos="fade-down">
-      <div class="container">
-        <a class="navbar-brand" onclick="openNav()"><i></i> Kontak Panitia</a>
-        <!-- navbar -sub: overlay -->
-        <div id="mySidenav" class="sidenav">
-          <a class="closebtn" onclick="closeNav()"><i></i></a>
-          <a href="https://wa.me/6282219660064"><i></i> WhatsApp</a>
-          <a href="https://t.me/khairulhabibie"><i></i> Telegram</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#home"> Home</a>
-            <a class="nav-link active" href="#"> Surat Undangan</a>
-            <a class="nav-link active" href="https://forms.gle/UUXotFnwd5FDFi3C8"> Form Pendaftaran</a>
-            <a class="nav-link active" href="https://forms.gle/UUXotFnwd5FDFi3C8"> Lokasi MTQ</a>
-            <a class="nav-link active" href="#QnA"> QnA</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- akhir navbar -->
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    <!-- jumbotron -->
-    <section class="jumbotron">
-      <div class="row">
-        <div class="col">
-          <img src="img/mtq.jpg" alt="MTQ Batu Taba" />
-          <h2 class="display-4" data-aos="fade-left">MTQ Batu Taba 1443H</h2>
-          <p></p>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,96C672,85,768,107,864,133.3C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir jumbotron -->
+span {
+  font-weight: bold;
+}
 
-    <!-- MTQ -->
-    <section id="MTQ">
-      <div class="container">
-        <div class="row">
-          <div class="col" data-aos="fade-down" data-aos-delay="250">
-            <h2>MTQ</h2>
-          </div>
-        </div>
-        <div class="row justify-content-evenly">
-          <div class="col-md-5" data-aos="fade-right" data-aos-delay="250">
-            <p>
-              <span>Musabaqah Tilawatil Quran </span>(bahasa Arab: مسابقة تلاوة القران, disingkat MTQ) adalah festival keagamaan Islam Indonesia yang bertujuan untuk mengagungkan Al Quran. <br />
-              Pada festival ini, peserta berlomba mengaji Al-Qur'an dengan menggunakan Qira'at.
-            </p>
-          </div>
-          <div class="col-md-5" data-aos="fade-left" data-aos-delay="250">
-            <p>
-              <span>Tujuan dan Manfaat MTQ</span> <br />
-              (1) Meningkatkan pemahaman, penghayatan dan pengamalanisi kandungan Al-Qur'an. <br />
-              (2) Meningkatkan Ukhuwwah Islamiyah. <br />
-              (3) Melestarikan seni dan budaya Qur'ani bangsa Indonesia.
-            </p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#198754"
-          fill-opacity="1"
-          d="M0,96L80,85.3C160,75,320,53,480,80C640,107,800,181,960,181.3C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir MTQ -->
+/* NAVBAR */
+nav {
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+}
 
-    <!-- MTQBatuTaba -->
-    <section id="MTQBatuTaba">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col" data-aos="fade-down">
-            <h2>MTQ Batu Taba 1443H / 2022M</h2>
-          </div>
-        </div>
-        <div class="row justify-content-evenly">
-          <!-- waktu -->
-          <div class="col-md-4" data-aos="fade-right">
-            <i class="waktu"></i>
-            <p>
-              ... - ... <br />
-              1443H/2022M
-            </p>
-            <a class="btn btn-primary mb-3" href="#" target="_blank">Lihat TimeLine</a>
-          </div>
-          <!-- lokasi -->
-          <div class="col-md-4 mb-3" data-aos="fade-up">
-            <i class="lokasi"></i>
-            <p>Mesjid Raya Batu Taba <br />Kec. Batipuh Selatan, Kab.Tanah Datar</p>
-            <a class="btn btn-primary" href="https://goo.gl/maps/mRKBP7U5tHhHhpmbA" target="_blank">Lihat MAP</a>
-          </div>
-          <!-- form pendaftaran -->
-          <div class="col-md-4" data-aos="fade-left">
-            <i class="daftar"></i>
-            <p>Formulir Pendaftaran <br />MTQ</p>
-            <a class="btn btn-primary" href="https://forms.gle/UUXotFnwd5FDFi3C8" target="_blank">Buka Form</a>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,192L60,202.7C120,213,240,235,360,218.7C480,203,600,149,720,154.7C840,160,960,224,1080,234.7C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir MTQBatuTaba -->
+.navbar a {
+  background-color: #198754;
+  color: #e2edff;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background-color: #198754;
+}
 
-    <!-- QnA -->
-    <section id="QnA">
-      <div class="container">
-        <div class="row">
-          <div class="col" data-aos="fade-down">
-            <h2>QnA</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item" data-aos="fade-right">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Pertanyaan #1</button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, sit. <code>Lorem ipsum dolor sit amet.</code> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, adipisci!</div>
-                </div>
-              </div>
-              <div class="accordion-item" data-aos="fade-left">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Pertanyaan #2</button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, non.<code>Lorem ipsum dolor sit amet.</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni.</div>
-                </div>
-              </div>
-              <div class="accordion-item" data-aos="fade-right" data-aos-delay="250">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Pertanyaan #3</button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, iste? <code>Lorem ipsum dolor sit amet.</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#198754"
-          fill-opacity="1"
-          d="M0,192L60,202.7C120,213,240,235,360,218.7C480,203,600,149,720,154.7C840,160,960,224,1080,234.7C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir QnA  -->
+nav .container .navbar-brand {
+  color: #e2edff;
+  background-color: #198754;
+  padding: 10px;
+  margin: 2px;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-    <!-- footer -->
-    <footer>
-      <p>Created by <a href="#" target="_blank">Pemuda/i Batu Taba</a></p>
-    </footer>
-    <!-- akhir footer -->
+nav .nav-link {
+  background-color: #e2edff;
+  padding: 10px;
+  margin: 2px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
 
-    <!-- js folder -->
-    <script src="script/indexScript.js"></script>
+/* navbar -sub: overlay */
 
-    <!-- boostrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #198754;
+  overflow: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 0 -5px 5px #333;
+}
 
-    <!-- AOS: slide animasi -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 2000,
-      });
-    </script>
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.jumbotron p', { duration: 3, delay: 1, text: 'Batu Taba | Batipuh Selatan | Tanah Datar' });
-      gsap.from('.jumbotron img', { duration: 2, y: -100, rotateY: 360, opacity: 0, ease: 'bounce' });
-    </script>
-  </body>
-</html>
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #eaeaea;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.sidenav a:hover {
+  color: #333;
+  margin-left: 1rem;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #198754;
+  text-align: center;
+}
+
+.jumbotron img {
+  border-radius: 50%;
+  border: white solid 4px;
+  width: 200px;
+}
+
+.jumbotron img:hover {
+  transition: 1s;
+  width: 250px;
+}
+
+.jumbotron p {
+  font-size: 16px;
+  transition: 1s;
+}
+
+.jumbotron p:hover {
+  transition: 1s;
+  font-size: 25px;
+}
+
+/* MTQ */
+#MTQ h2,
+#MTQ p {
+  color: #198754;
+}
+
+#MTQ .row {
+  margin: 0px 5px 0px 5px;
+}
+
+#MTQ .col-md-5 {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 15px;
+}
+
+/* MTQBatuTaba */
+#MTQBatuTaba .row {
+  margin: 0px 5px 0px 5px;
+  text-align: center;
+}
+
+#MTQBatuTaba .col-md-5 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 15px;
+}
+
+#MTQBatuTaba i {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 1rem;
+  color: #eaeaea;
+}
+
+#MTQBatuTaba a {
+  box-shadow: 0 0 5px 1px #eaeaea;
+}
+
+/* QnA */
+#QnA h2,
+#QnA p {
+  color: #198754;
+}
+
+/* KONTAK */
+#kontak h2,
+#kontak p {
+  color: #198754;
+}
+
+#kontak .row {
+  margin: 0px 5px 0px 5px;
+}
+
+#kontak .col-md-5 {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 15px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #198754;
+  color: #eaeaea;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+footer a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: bold;
+}
+
+footer a:hover {
+  transition: 0.5s;
+  background-color: #eaeaea;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
