@@ -177,6 +177,23 @@ nav .nav-link {
   color: #198754;
 }
 
+/* KONTAK */
+#kontak h2,
+#kontak p {
+  color: #198754;
+}
+
+#kontak .row {
+  margin: 0px 5px 0px 5px;
+}
+
+#kontak .col-md-5 {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 15px;
+}
+
+
 /* FOOTER */
 footer {
   background-color: #198754;
@@ -185,15 +202,11 @@ footer {
   padding-bottom: 4rem;
 }
 
-footer i {
-  color: #dc3545;
-}
-
 footer a {
+  transition: 0.5s;
   text-decoration: none;
   color: #eaeaea;
   font-weight: bold;
-  transition: 0.5s;
 }
 
 footer a:hover {
