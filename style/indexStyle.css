@@ -49,12 +49,19 @@ nav {
 }
 
 nav .container .navbar-brand {
+  transition: 0.3s;
   color: #e2edff;
-  background-color: #198754;
   padding: 10px;
   margin: 2px;
   text-decoration: none;
   border-radius: 5px;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+nav .container .navbar-brand:hover {
+  transition: 0.3s;
+  color: #198754;
+  text-shadow: 0.5px 0.5px 3px #e2edff, -0.5px -0.5px 3px #e2edff;
 }
 
 nav .nav-link {
@@ -68,7 +75,6 @@ nav .nav-link {
 }
 
 /* navbar -sub: overlay */
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -93,8 +99,9 @@ nav .nav-link {
 }
 
 .sidenav a:hover {
-  color: #333;
   margin-left: 1rem;
+  color: #198754;
+  text-shadow: 1px 1px 3px #e2edff, -1px -1px 3px #e2edff;
 }
 
 .sidenav .closebtn {
@@ -103,6 +110,14 @@ nav .nav-link {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+#navbarNavAltMarkup a {
+  color: #198754;
+}
+
+#navbarNavAltMarkup a:hover {
+  color: #e2edff;
 }
 
 /* JUMBOTRON */
@@ -119,8 +134,8 @@ nav .nav-link {
 }
 
 .jumbotron img:hover {
-  transition: 1s;
-  width: 250px;
+  box-shadow: 0 0 8px 5px #e2edff;
+  border: 3px solid #198754;
 }
 
 .jumbotron p {
@@ -128,15 +143,21 @@ nav .nav-link {
   transition: 1s;
 }
 
+.jumbotron h2,
+.jumbotron p {
+  text-shadow: 1px 1px 1px black;
+}
+
 .jumbotron p:hover {
   transition: 1s;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* MTQ */
 #MTQ h2,
 #MTQ p {
   color: #198754;
+  text-shadow: 0.2px 0.2px 0.2px black;
 }
 
 #MTQ .row {
@@ -150,6 +171,10 @@ nav .nav-link {
 }
 
 /* MTQBatuTaba */
+#MTQBatuTaba h2 {
+  text-shadow: 1px 1px 1px black;
+}
+
 #MTQBatuTaba .row {
   margin: 0px 5px 0px 5px;
   text-align: center;
@@ -169,6 +194,12 @@ nav .nav-link {
   color: #eaeaea;
 }
 
+#MTQBatuTaba i,
+#MTQBatuTaba a,
+#MTQBatuTaba P {
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
 #MTQBatuTaba a {
   box-shadow: 0 0 5px 1px #eaeaea;
 }
@@ -177,22 +208,7 @@ nav .nav-link {
 #QnA h2,
 #QnA p {
   color: #198754;
-}
-
-/* KONTAK */
-#kontak h2,
-#kontak p {
-  color: #198754;
-}
-
-#kontak .row {
-  margin: 0px 5px 0px 5px;
-}
-
-#kontak .col-md-5 {
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 15px;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* FOOTER */
@@ -213,7 +229,7 @@ footer a {
 footer a:hover {
   transition: 0.5s;
   background-color: #eaeaea;
-  color: black;
+  color: #198754;
   padding: 0.5rem;
   border-radius: 2rem;
 }
