@@ -212,30 +212,34 @@ nav .nav-link {
 }
 
 /* TOPUP BUTTON */
-.topUp {
-  position:fixed;
-  bottom:20px;
-  right: 40px;
-  width:5%;
+.flyButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   z-index: 9999;
-  padding: 5px;
-  margin:auto;
-  }
+  /* margin: auto; */
+}
 
-.topUp a{
-      color:white;
-      border: solid 1px #e2edff;
-      box-shadow: 0 0 2px 1px #e2edff;
-      text-decoration: none;
-      text-shadow: 1px 1px 1px black;
-      background-color: #198754;
-      width:100%;
-      padding: 5px 12px;
-      text-align:center;
-      margin:0;
-      border-radius: 5px;
-      margin:auto;
-      }
+.flyButton a {
+  background-color: #198754;
+  color: #e2edff;
+  border: solid 1px #e2edff;
+  box-shadow: 0 0 2px 1px #e2edff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  padding: 7px 12px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px 5px 10px 5px;
+  display: grid;
+}
+
+.flyButton a:hover {
+  background-color: #e2edff;
+  color: #198754;
+  box-shadow: 0 0 2px 1px #198754;
+  text-shadow: 0.5px 0.5px 0.5px #333;
+}
 
 /* FOOTER */
 footer {
@@ -252,4 +256,3 @@ footer a {
   color: #eaeaea;
   font-weight: bold;
 }
-
