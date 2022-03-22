@@ -214,10 +214,11 @@ nav .nav-link {
 /* TOPUP BUTTON */
 .flyButton {
   position: fixed;
-  bottom: 20px;
+  bottom: 40%;
   right: 20px;
   z-index: 9999;
-  /* margin: auto; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 .flyButton a {
@@ -227,10 +228,10 @@ nav .nav-link {
   box-shadow: 0 0 2px 1px #e2edff;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
-  padding: 7px 12px;
   text-align: center;
+  padding: 7px 12px;
   border-radius: 5px;
-  margin: 5px 5px 10px 5px;
+  margin: 5px 5px 15px 5px;
   display: grid;
 }
 
