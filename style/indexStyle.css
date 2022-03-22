@@ -208,8 +208,34 @@ nav .nav-link {
 #QnA h2,
 #QnA p {
   color: #198754;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0.2px 0.2px 0.2px black;
 }
+
+/* TOPUP BUTTON */
+.topUp {
+  position:fixed;
+  bottom:20px;
+  right: 40px;
+  width:5%;
+  z-index: 9999;
+  padding: 5px;
+  margin:auto;
+  }
+
+.topUp a{
+      color:white;
+      border: solid 1px #e2edff;
+      box-shadow: 0 0 2px 1px #e2edff;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px black;
+      background-color: #198754;
+      width:100%;
+      padding: 5px 12px;
+      text-align:center;
+      margin:0;
+      border-radius: 5px;
+      margin:auto;
+      }
 
 /* FOOTER */
 footer {
@@ -217,6 +243,7 @@ footer {
   color: #eaeaea;
   text-align: center;
   padding-bottom: 4rem;
+  text-shadow: 0.3px 0.3px 0.3px black;
 }
 
 footer a {
@@ -226,10 +253,3 @@ footer a {
   font-weight: bold;
 }
 
-footer a:hover {
-  transition: 0.5s;
-  background-color: #eaeaea;
-  color: #198754;
-  padding: 0.5rem;
-  border-radius: 2rem;
-}
