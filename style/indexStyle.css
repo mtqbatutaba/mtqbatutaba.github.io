@@ -227,7 +227,6 @@ nav .nav-link {
 }
 
 .rightButton a,
-.middleButton a, 
 .leftButton a {
   background-color: #198754;
   color: #e2edff;
@@ -243,7 +242,6 @@ nav .nav-link {
 }
 
 .rightButton a:hover,
-.middleButton a:hover, 
 .leftButton a:hover {
   background-color: #e2edff;
   color: #198754;
