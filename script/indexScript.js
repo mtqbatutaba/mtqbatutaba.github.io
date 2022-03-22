@@ -26,3 +26,8 @@ icon2[4].classList.add('fa', 'fa-chevron-circle-down');
 document.querySelector('i.waktu').classList.add('fa','fa-calendar');
 document.querySelector('i.lokasi').classList.add('fa','fa-map-marker');
 document.querySelector('i.daftar').classList.add('fa','fa-link');
+
+document.querySelector('.timeline i').classList.add('fa', 'fa-calendar');
+document.querySelector('.file i').classList.add('fa', 'fa-file-pdf-o');
+document.querySelector('.link i').classList.add('fa', 'fa-link');
+document.querySelector('.map i').classList.add('fa', 'fa-map-marker');
