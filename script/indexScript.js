@@ -11,24 +11,36 @@ function closeNav() {
 // -sub: icon
 document.querySelector('a.navbar-brand i').classList.add('fa', 'fa-user-circle');
 
-const icon1 = document.querySelectorAll('#mySidenav i');
-icon1[0].classList.add('fa', 'fa-times-circle-o');
-icon1[1].classList.add('fa', 'fa-whatsapp');
-icon1[2].classList.add('fa', 'fa-telegram');
+const iconOverlay = document.querySelectorAll('#mySidenav i');
+iconOverlay[0].classList.add('fa', 'fa-times-circle-o');
+iconOverlay[1].classList.add('fa', 'fa-whatsapp');
+iconOverlay[2].classList.add('fa', 'fa-telegram');
 
-const icon2 = document.querySelectorAll('a.nav-link');
-icon2[0].classList.add('fa', 'fa-home');
-icon2[1].classList.add('fa', 'fa-file-pdf-o');
-icon2[2].classList.add('fa', 'fa-calendar');
-icon2[3].classList.add('fa', 'fa-link');
-icon2[4].classList.add('fa', 'fa-map-marker');
-icon2[5].classList.add('fa', 'fa-chevron-circle-down');
+const iconNavbar = document.querySelectorAll('a.nav-link');
+iconNavbar[0].classList.add('fa', 'fa-home');
+iconNavbar[1].classList.add('fa', 'fa-file-pdf-o');
+iconNavbar[2].classList.add('fa', 'fa-calendar');
+iconNavbar[3].classList.add('fa', 'fa-link');
+iconNavbar[4].classList.add('fa', 'fa-map-marker');
+iconNavbar[5].classList.add('fa', 'fa-chevron-circle-down');
 
-document.querySelector('i.waktu').classList.add('fa','fa-calendar');
-document.querySelector('i.lokasi').classList.add('fa','fa-map-marker');
-document.querySelector('i.daftar').classList.add('fa','fa-link');
 
-document.querySelector('.timeline i').classList.add('fa', 'fa-calendar');
-document.querySelector('.fileUndangan i').classList.add('fa', 'fa-file-pdf-o');
-document.querySelector('.link i').classList.add('fa', 'fa-link');
-document.querySelector('.map i').classList.add('fa', 'fa-map-marker');
+const iconTimeLine = document.querySelectorAll('.timeline');
+for (let i = 0; i < iconTimeLine.length; i++){
+  iconTimeLine[i].classList.add('fa', 'fa-calendar');
+};
+
+const iconMap = document.querySelectorAll('.map');
+for (let i = 0; i < iconMap.length; i++) {
+  iconMap[i].classList.add('fa', 'fa-map-marker');
+};
+
+const iconDaftar = document.querySelectorAll('.daftar')
+for (let i = 0; i < iconDaftar.length; i++){
+  iconDaftar[i].classList.add('fa', 'fa-link');
+};
+
+const iconFileUndangan = document.querySelectorAll('.fileUndangan');
+for (let i = 0; i < iconFileUndangan.length; i++){
+  iconFileUndangan[i].classList.add('fa', 'fa-file-pdf-o')
+};
