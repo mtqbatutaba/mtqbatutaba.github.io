@@ -3,18 +3,10 @@ section,
   overflow: hidden;
 }
 
-#MTQBatuTaba {
-  background-color: #198754;
-}
-
 h2,
 p {
   text-align: center;
   color: #eaeaea;
-}
-
-.center {
-  text-align: center;
 }
 
 .row {
@@ -171,6 +163,10 @@ nav .nav-link {
 }
 
 /* MTQBatuTaba */
+#MTQBatuTaba {
+  background-color: #198754;
+}
+
 #MTQBatuTaba h2 {
   text-shadow: 1px 1px 1px black;
 }
@@ -263,4 +259,9 @@ footer a {
   text-decoration: none;
   color: #eaeaea;
   font-weight: bold;
+}
+
+footer a:hover {
+  color: #198754;
+  text-shadow: 0.5px 0.5px 3px #e2edff, -0.5px -0.5px 3px #e2edff;
 }
