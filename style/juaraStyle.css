@@ -1,0 +1,95 @@
+section,
+.container {
+  overflow: hidden;
+}
+
+h2,
+p,
+th {
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+section .row .col img {
+  width: 200px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #198754;
+  text-align: center;
+}
+
+.jumbotron img {
+  border-radius: 50%;
+  border: white solid 4px;
+  width: 200px;
+}
+
+.jumbotron img:hover {
+  box-shadow: 0 0 8px 5px #e2edff;
+  border: 3px solid #198754;
+}
+
+.jumbotron p {
+  font-size: 16px;
+  transition: 1s;
+}
+
+.jumbotron p:hover {
+  transition: 1s;
+  font-size: 20px;
+}
+
+.jumbotron h2,
+.jumbotron p {
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  color: #eaeaea;
+}
+
+.jumbotron button.btn {
+  box-shadow: 0 0 5px 1px #e2edff;
+  margin: 5px;
+}
+
+/* specialButton */
+#specialButton p {
+  text-align: center;
+}
+
+/* juaraMTQ */
+#juaraMTQ,
+#alertMTQ {
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #198754;
+  color: #eaeaea;
+  text-align: center;
+  padding-bottom: 4rem;
+  text-shadow: 0.3px 0.3px 0.3px black;
+}
+
+footer a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: bold;
+}
