@@ -9,18 +9,10 @@ p {
   color: #eaeaea;
 }
 
-.row {
-  margin-bottom: 1rem;
-}
-
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-span {
-  font-weight: bold;
-}
 
 /* NAVBAR */
 nav {
@@ -152,6 +144,10 @@ nav .nav-link {
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
+#MTQ span {
+  font-weight: bold;
+}
+
 #MTQ .row {
   margin: 0px 5px 0px 5px;
 }
@@ -222,8 +218,8 @@ nav .nav-link {
   right: 70px;
 }
 
-#rightButton a,
-#hiddenFlyButton a{
+#rightButton button,
+#hiddenFlyButton a {
   background-color: #198754;
   color: #e2edff;
   border: solid 1px #e2edff;
@@ -241,13 +237,10 @@ nav .nav-link {
   display: none;
 }
 
-#rightButton a:hover,
-#hiddenFlyButton a:hover,
-.leftButton a:hover {
+#hiddenFlyButton a:hover {
   background-color: #e2edff;
   color: #198754;
   box-shadow: 0 0 2px 1px #198754;
-  text-shadow: 0.5px 0.5px 0.5px #333;
 }
 
 /* FOOTER */

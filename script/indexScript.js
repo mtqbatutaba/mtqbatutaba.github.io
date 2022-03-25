@@ -6,6 +6,17 @@ function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
 
+// fly button
+const link = document.querySelector('#rightButton .link');
+link.addEventListener('click', function(){
+  var hiddenFlyBUtton = document.getElementById('hiddenFlyButton');
+  if (hiddenFlyBUtton.style.display === 'none') {
+    hiddenFlyBUtton.style.display = 'block';
+  } else {
+    hiddenFlyBUtton.style.display = 'none';
+  };
+});
+
 // ----------------------------------------------------------------
 
 // -sub: icon
@@ -48,16 +59,3 @@ const iconLink = document.querySelectorAll('.link');
 for (let i = 0; i < iconLink.length; i++) {
   iconLink[i].classList.add('fa', 'fa-link');
 }
-
-
-
-// fly button
-const link = document.querySelector('#rightButton .link');
-link.addEventListener('click', function(){
-  var hiddenFlyBUtton = document.getElementById('hiddenFlyButton');
-  if (hiddenFlyBUtton.style.display === 'none') {
-    hiddenFlyBUtton.style.display = 'block';
-  } else {
-    hiddenFlyBUtton.style.display = 'none';
-  };
-});
