@@ -1,6 +1,6 @@
 # 🔥 mtqbatutaba.github.io
-Website sederhana MTQ Nagari Batu Taba, ramadhan tahun 1443h / 2022m
-Batu taba | Kec. Batipuh Selatan | Kab. Tanah Datar
+
+Website MTQ Nagari Batu Taba | Kec. Batipuh Selatan | Kab. Tanah Datar. MTQ pada Ramadhan tahun 1443h / 2022m
 
 ---
 

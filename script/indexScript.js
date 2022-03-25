@@ -20,27 +20,44 @@ const iconNavbar = document.querySelectorAll('a.nav-link');
 iconNavbar[0].classList.add('fa', 'fa-home');
 iconNavbar[1].classList.add('fa', 'fa-file-pdf-o');
 iconNavbar[2].classList.add('fa', 'fa-calendar');
-iconNavbar[3].classList.add('fa', 'fa-link');
+iconNavbar[3].classList.add('fa', 'fa-file-text-o');
 iconNavbar[4].classList.add('fa', 'fa-map-marker');
 iconNavbar[5].classList.add('fa', 'fa-chevron-circle-down');
 
-
 const iconTimeLine = document.querySelectorAll('.timeline');
-for (let i = 0; i < iconTimeLine.length; i++){
+for (let i = 0; i < iconTimeLine.length; i++) {
   iconTimeLine[i].classList.add('fa', 'fa-calendar');
-};
+}
 
 const iconMap = document.querySelectorAll('.map');
 for (let i = 0; i < iconMap.length; i++) {
   iconMap[i].classList.add('fa', 'fa-map-marker');
-};
+}
 
-const iconDaftar = document.querySelectorAll('.daftar')
-for (let i = 0; i < iconDaftar.length; i++){
-  iconDaftar[i].classList.add('fa', 'fa-link');
-};
+const iconDaftar = document.querySelectorAll('.daftar');
+for (let i = 0; i < iconDaftar.length; i++) {
+  iconDaftar[i].classList.add('fa', 'fa-file-text-o');
+}
 
 const iconFileUndangan = document.querySelectorAll('.fileUndangan');
-for (let i = 0; i < iconFileUndangan.length; i++){
-  iconFileUndangan[i].classList.add('fa', 'fa-file-pdf-o')
-};
+for (let i = 0; i < iconFileUndangan.length; i++) {
+  iconFileUndangan[i].classList.add('fa', 'fa-file-pdf-o');
+}
+
+const iconLink = document.querySelectorAll('.link');
+for (let i = 0; i < iconLink.length; i++) {
+  iconLink[i].classList.add('fa', 'fa-link');
+}
+
+
+
+// fly button
+const link = document.querySelector('#rightButton .link');
+link.addEventListener('click', function(){
+  var hiddenFlyBUtton = document.getElementById('hiddenFlyButton');
+  if (hiddenFlyBUtton.style.display === 'none') {
+    hiddenFlyBUtton.style.display = 'block';
+  } else {
+    hiddenFlyBUtton.style.display = 'none';
+  };
+});

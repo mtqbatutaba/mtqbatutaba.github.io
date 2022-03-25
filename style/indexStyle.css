@@ -208,22 +208,22 @@ nav .nav-link {
 }
 
 /* FLY BUTTON */
-.rightButton {
+#rightButton {
   position: fixed;
   z-index: 9999;
   bottom: 20px;
   right: 20px;
 }
 
-.leftButton {
+#hiddenFlyButton {
   position: fixed;
   z-index: 9999;
   bottom: 20px;
-  left: 20px;
+  right: 70px;
 }
 
-.rightButton a,
-.leftButton a {
+#rightButton a,
+#hiddenFlyButton a{
   background-color: #198754;
   color: #e2edff;
   border: solid 1px #e2edff;
@@ -237,7 +237,12 @@ nav .nav-link {
   display: grid;
 }
 
-.rightButton a:hover,
+#hiddenFlyButton {
+  display: none;
+}
+
+#rightButton a:hover,
+#hiddenFlyButton a:hover,
 .leftButton a:hover {
   background-color: #e2edff;
   color: #198754;
