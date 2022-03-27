@@ -62,7 +62,7 @@ section .row .col img {
   color: #eaeaea;
 }
 
-.jumbotron button.btn {
+.jumbotron .btn {
   box-shadow: 0 0 5px 1px #e2edff;
   margin: 5px;
 }
