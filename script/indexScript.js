@@ -6,17 +6,6 @@ function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
 
-// fly button
-const link = document.querySelector('#rightButton .link');
-link.addEventListener('click', function(){
-  var hiddenFlyBUtton = document.getElementById('hiddenFlyButton');
-  if (hiddenFlyBUtton.style.display === 'none') {
-    hiddenFlyBUtton.style.display = 'block';
-  } else {
-    hiddenFlyBUtton.style.display = 'none';
-  };
-});
-
 // ----------------------------------------------------------------
 
 // -sub: icon

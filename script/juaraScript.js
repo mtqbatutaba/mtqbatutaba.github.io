@@ -7,19 +7,24 @@ function closeNav() {
 }
 
 // juara MTQ
-const juara = document.getElementById('juara');
-juara.addEventListener('click', function () {
-  const juaraMTQ = document.getElementById('juaraMTQ');
-  juara.style.display = 'none';
-  juaraMTQ.style.display = 'block';
-});
+
+// const juara = document.getElementById('juara');
+// juara.addEventListener('click', function () {
+//   Swal.fire({
+//     icon: 'success',
+//     title: 'Data sudah tersedia',
+//     text: 'Notice: Keputusan Dewan Juri tidak dapat diganggugat',
+//   });
+//   const juaraMTQ = document.getElementById('juaraMTQ');
+//   juara.style.display = 'none';
+//   juaraMTQ.style.display = 'block';
+// });
 
 const alert = document.getElementById('alert');
 alert.addEventListener('click', function () {
-  const alertMTQ = document.getElementById('alertMTQ');
-  alert.style.display = 'none';
-  alertMTQ.style.display = 'block';
-
+  Swal.fire({
+    icon: 'error',
+    title: 'Data belum tersedia',
+    text: 'Harap menunggu 1x24 jam setelah pengumuman MTQ mesjid Raya Batu Taba',
+  });
 });
-
-

@@ -203,39 +203,6 @@ nav .nav-link {
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
-/* FLY BUTTON */
-#rightButton {
-  position: fixed;
-  z-index: 9999;
-  bottom: 20px;
-  right: 20px;
-}
-
-#hiddenFlyButton {
-  position: fixed;
-  z-index: 9999;
-  bottom: 20px;
-  right: 70px;
-}
-
-#rightButton button,
-#hiddenFlyButton a {
-  background-color: #198754;
-  color: #e2edff;
-  border: solid 1px #e2edff;
-  box-shadow: 0 0 2px 1px #e2edff;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px black;
-  text-align: center;
-  padding: 7px 12px;
-  border-radius: 5px;
-  margin: 5px 5px 15px 5px;
-  display: grid;
-}
-
-#hiddenFlyButton {
-  display: none;
-}
 
 #hiddenFlyButton a:hover {
   background-color: #e2edff;
