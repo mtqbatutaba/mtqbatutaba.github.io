@@ -48,35 +48,3 @@ const iconLink = document.querySelectorAll('.link');
 for (let i = 0; i < iconLink.length; i++) {
   iconLink[i].classList.add('fa', 'fa-link');
 }
-
-// ------------------------
-// form kritikan, saran, dan invonasi
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw_ftcTcb5Cwpt4vCo0-ME_D-Eeq6e_GPE45EE5McuKcGQOYw_zxnXNq2rq3dv4Xsed/exec';
-
-const form = document.forms['kritikanSaranInovasi'];
-const btnKirim = document.querySelector('.btn-kirim');
-const btnLoading = document.querySelector('.btn-loading');
-
-function alert() {
-  Swal.fire({
-    icon: 'success',
-    title: 'Data berhasil dikirim !',
-    text: 'Terima kasih telah berkontribusi',
-  });
-}
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  btnLoading.classList.toggle('d-none');
-  btnKirim.classList.toggle('d-none');
-
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then((response) => {
-      btnLoading.classList.toggle('d-none');
-      btnKirim.classList.toggle('d-none');
-      alert();
-      form.reset();
-      console.log('Success!', response);
-    })
-    .catch((error) => console.error('Error!', error.message));
-});

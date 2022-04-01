@@ -225,7 +225,8 @@ nav .nav-link {
 
 /* FOOTER */
 footer {
-  color: #198754;
+  color: #e2edff;
+  background-color: #198754;
   text-align: center;
   padding-bottom: 4rem;
   text-shadow: 0.3px 0.3px 0.3px black;
@@ -234,7 +235,7 @@ footer {
 footer a {
   transition: 0.5s;
   text-decoration: none;
-  color: #198754;
+  color: #e2edff;
   font-weight: bold;
 }
 
